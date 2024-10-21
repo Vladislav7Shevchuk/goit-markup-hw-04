@@ -218,7 +218,7 @@ img {
 .innovation-icons-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
@@ -422,6 +422,10 @@ img {
   padding-bottom: 100px;
 }
 
+.container-footer {
+  margin-right: 120px;
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -448,10 +452,7 @@ img {
 
 .container-footer-icon {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
+  align-items: baseline;
 }
 
 .social-text {
@@ -460,9 +461,20 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-icons:hover,
 .footer-icons:focus {
   background-color: #31d0aa;
+}
+
+.icons-list {
+  display: flex;
+  gap: 16px;
+}
+
+.icons-item {
+  width: 40px;
+  height: 40px;
 }
