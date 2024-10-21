@@ -106,6 +106,18 @@ img {
   color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active::after {
+  content: '';
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #404bbf;
 }
 
 .header-menu-link:hover,
@@ -124,6 +136,9 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-menu-link:hover,
@@ -133,6 +148,14 @@ img {
 
 .page-title {
   background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -162,6 +185,9 @@ img {
   display: block;
   margin: 0 auto;
   min-width: 169px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -176,6 +202,14 @@ img {
 
 .innovation-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.innovation-icons-container {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .innovation-title-text {
@@ -211,6 +245,7 @@ img {
 
 .team-list {
   display: flex;
+  margin-left: auto;
   gap: 24px;
 }
 
@@ -221,7 +256,42 @@ img {
   border-radius: 0 0 4px 4px;
 }
 
+.container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.link-icons {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icons:hover,
+.link-icons:focus {
+  background-color: #404bbf;
+}
+
+.team-icons {
+  fill: #f4f4fd;
+}
+
 .name-job {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -261,6 +331,48 @@ img {
   margin: 0;
   padding: 0;
   gap: 48px 24px;
+}
+
+.portfolio-item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
+.portfolio-item:hover .portfolio-cover-text {
+  transform: translateY(0);
+}
+
+.portfolio-cover-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cover-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  position: absolute;
+  background-color: #4d5ae5;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-portfolio {
@@ -314,4 +426,25 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.container-footer-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+  background-color: #31d0aa;
 }
