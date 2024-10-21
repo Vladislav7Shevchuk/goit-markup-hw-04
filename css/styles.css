@@ -423,6 +423,11 @@ img {
 }
 
 .container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-logo {
   margin-right: 120px;
 }
 
@@ -451,8 +456,6 @@ img {
 }
 
 .container-footer-icon {
-  display: flex;
-  align-items: baseline;
 }
 
 .social-text {
