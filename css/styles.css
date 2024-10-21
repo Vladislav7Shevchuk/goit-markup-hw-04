@@ -274,7 +274,6 @@ img {
 .icons-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
 }
 
 .icons-item {
@@ -453,9 +452,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-}
-
-.container-footer-icon {
 }
 
 .social-text {
